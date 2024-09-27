@@ -1,0 +1,90 @@
+<html></html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        .navbar img {
+            height: 30px;
+        }
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 14px;
+        }
+        .dropdown {
+            position: relative;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            padding: 10px 20px;
+            display: block;
+        }
+        .refer-earn {
+            background-color: #f0f8ff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .refer-earn img {
+            height: 20px;
+        }
+        .login-btn {
+            border: 1px solid red;
+            color: red;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://cdn.masaischool.com/masai-website/Masai_Logo_dark_web_b21aab8c62.webp" alt="Company Logo">
+        <div class="nav-links">
+            <div class="dropdown">
+                <a href="#">COURSES <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Course 1</a>
+                    <a href="#">Course 2</a>
+                    <a href="#">Course 3</a>
+                </div>
+            </div>
+            <a href="#">FEES & ISA</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">HIRE FROM US</a>
+            <a href="#">FAQ</a>
+            <a href="#">EVENTS</a>
+            <div class="refer-earn">
+                <a href="#">REFER & EARN</a>
+                <img src="https://dashboard.masaischool.com/static/media/coin.48adfe47.svg" alt="Refer & Earn Icon">
+            </div>
+            <a class="login-btn" href="#">LOGIN</a>
+        </div>
+    </div>
+</body>
+</html>
